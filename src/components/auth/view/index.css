@@ -1,0 +1,63 @@
+* {
+      margin: auto;
+      padding: auto;
+      box-sizing: border-box;
+      border: none;
+}
+
+body {
+      background: url('./images/background.png') no-repeat;
+      -moz-background-size: 100%; 
+      -webkit-background-size: 100%; 
+      -o-background-size: 100%; 
+      background-size: 100%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.Container {
+      padding-top: 100px;
+      display: flex;
+      flex-direction: row;
+      width: 900px;
+      height: 500px;
+}
+
+.AuthWindow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white; 
+      height: 100%;
+      width: 50%;
+      padding-top: 61px;
+      padding-bottom: 61px;
+
+}
+
+.LoginForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 355px;
+      height: 144px;
+}
+
+.AuthInput {
+      background-color: #EDEDED; 
+      border: 0.3px solid #B5B5B5;
+      height: 58px;
+      width: 355px;
+}
+
+
+.NotAccount {
+      background-color:#C3073F ; 
+      height: 100%;
+      width: 50%;
+}
+
+
+
