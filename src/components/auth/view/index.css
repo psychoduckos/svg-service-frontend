@@ -32,9 +32,23 @@ body {
       background-color: white; 
       height: 100%;
       width: 50%;
-      padding-top: 61px;
-      padding-bottom: 61px;
+}
 
+.AuthContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 377px;
+      width: 355px;
+}
+
+.ActionType {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 47px;
 }
 
 .LoginForm {
@@ -52,11 +66,89 @@ body {
       width: 355px;
 }
 
+input{
+      padding: 0 20px;
+      cursor: text;
+}
+
+.ForgotPassword {
+      display: flex;
+      align-items: center;
+      background-color: white;
+}
+
+.ForgotPasswordButton {
+      background-color: transparent;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      cursor: pointer;
+
+}
+
+.ContinueButton {
+      background-color:#C3073F;
+      width: 195px;
+      height: 52px;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+}
+
 
 .NotAccount {
       background-color:#C3073F ; 
       height: 100%;
       width: 50%;
+      display: flex;
+}
+
+.NotAccountContainer {
+      height: 228px;
+      width: 355px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+}
+
+.Greetings {
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 47px;
+
+      color: #FFFFFF;
+}
+
+.TextToSignUp {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+
+color: #FFFFFF;
+}
+
+.StartSignUp {
+      display: flex;
+      justify-content: center;
+}
+
+.StartSignUpButton {
+      border: 1px solid #FFFFFF;
+      background-color: transparent;
+      width: 195px;
+      height: 52px;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
 }
 
 
