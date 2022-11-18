@@ -5,19 +5,19 @@
       border: none;
 }
 
-body {
+.MainContainer {
       background: url('./images/background.png') no-repeat;
       -moz-background-size: 100%; 
       -webkit-background-size: 100%; 
       -o-background-size: 100%; 
-      background-size: 100%; 
+      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
+      height: 100vh;
 }
 
 .Container {
-      padding-top: 100px;
       display: flex;
       flex-direction: row;
       width: 900px;
@@ -62,7 +62,7 @@ body {
 .AuthInput {
       background-color: #EDEDED; 
       border: 0.3px solid #B5B5B5;
-      height: 58px;
+      height: 40px;
       width: 355px;
 }
 
