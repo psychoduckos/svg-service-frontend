@@ -14,13 +14,15 @@ const RegisterPage = () => {
 
       const getRefData = async () => {
             let object = {
-                  nickname: inputNickname,
-                  email: inputEmail,
-                  password: inputPassword
+                  username: inputNickname.current?.value,
+                  email: inputEmail.current?.value,
+                  password: inputPassword.current?.value
             }
+            console.log(object);
 
-            let res = await register(object)
-            return {data: object, result: res}
+            await register(object)
+            alert('Check your EMAIL, man!')
+            return (() => {navigate('/landing')})
       }
 
       return ( 

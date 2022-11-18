@@ -15,8 +15,8 @@ const AuthPage = () => {
 
       const getRefData = async () => {
             let object = {
-                  email: inputEmail,
-                  password: inputPassword
+                  email: inputEmail.current?.value,
+                  password: inputPassword.current?.value
             }
 
             let res = await login(object)
