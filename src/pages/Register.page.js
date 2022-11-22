@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { redirect } from "react-router-dom";
 import Input from "../components/input";
 import { register } from "../utils/auth.utils";
 
@@ -22,7 +23,7 @@ const RegisterPage = () => {
 
             await register(object)
             alert('Check your EMAIL, man!')
-            return (() => {navigate('/landing')})
+            return (() => {redirect('/landing')})()
       }
 
       return ( 
@@ -36,7 +37,7 @@ const RegisterPage = () => {
                         <div className="LoginForm">
                               <Input ref={inputNickname} placeholder={"Nickname"} type={'text'}/>
                               <Input ref={inputEmail} placeholder={"Email"} type={'text'}/>
-                              <Input ref={inputPassword} placeholder={"Password"} type={'text'}/>
+                              <Input ref={inputPassword} placeholder={"Password"} type={'password'}/>
                         </div>
                         <div className="Next">
                               <div className="Contitue">

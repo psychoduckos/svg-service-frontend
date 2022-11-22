@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 // Pages
-import AuthPage from "./pages/Auth.page";
+import LoginPage from "./pages/Login.page";
 import RegisterPage from "./pages/Register.page";
 import PortfolioPage from "./pages/Portfolio.page";
 import LandingPage from "./pages/Landing.page";
@@ -10,8 +10,8 @@ import LandingPage from "./pages/Landing.page";
 
 const rout = createBrowserRouter([
   {
-    path: "/auth",
-    element: <AuthPage/>
+    path: "/login",
+    element: <LoginPage/>
   },
   {
     path: "/register",

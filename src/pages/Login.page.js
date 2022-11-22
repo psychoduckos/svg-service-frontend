@@ -20,7 +20,8 @@ const AuthPage = () => {
             }
 
             let res = await login(object)
-            return (() => {navigate('/landing')})
+            console.log(res);
+            return navigate('/landing')
       }
 
       return ( 
@@ -33,7 +34,7 @@ const AuthPage = () => {
                         </div>
                         <div className="LoginForm">
                               <Input ref={inputEmail} placeholder={"Email"} type={'text'}/>
-                              <Input ref={inputPassword} placeholder={"Password"} type={'text'}/>
+                              <Input ref={inputPassword} placeholder={"Password"} type={'password'}/>
                         </div>
                         <div className="Next">
                               <div className="ForgotPassword">
@@ -41,7 +42,7 @@ const AuthPage = () => {
                               </div>
             
                               <div className="Contitue">
-                                    <button className="ContinueButton" onClick={() => {navigate('/landing')}}>SIGN IN</button>
+                                    <button className="ContinueButton" onClick={getRefData}>SIGN IN</button>
                               </div>     
                         </div>
                   </div>
